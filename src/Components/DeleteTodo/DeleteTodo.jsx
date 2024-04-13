@@ -29,7 +29,7 @@ const DeleteTodo = () => {
             {todos.map((todo) => (
                 <h2
                     key={todo.id}
-                    className="text-sm m-4 p-1 md:w-96 md:mx-auto w-auto rounded-xl bg-slate-700 text-white whitespace-normal"
+                    className="text-sm m-4 p-1 overflow-y-scroll md:w-96 md:mx-auto w-auto rounded-xl bg-slate-700 text-white whitespace-normal"
                 >
                     <EditNoteOutlinedIcon /> &nbsp;
                     {editModeId === todo.id ? (
